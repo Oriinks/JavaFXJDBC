@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
+  <tabs>
+    <Tab text="Stwórz tabele">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="193.0" layoutY="96.0" mnemonicParsing="false" onAction="#stworzPracownik" prefHeight="60.0" prefWidth="180.0" text="Stwórz">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="343.0" fitWidth="599.0" layoutX="341.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/sql-595x335_0.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="915.0" layoutY="96.0" mnemonicParsing="false" onAction="#stworzProdukt" prefHeight="60.0" prefWidth="180.0" text="Stwórz">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="193.0" layoutY="507.0" mnemonicParsing="false" onAction="#stworzKlient" prefHeight="60.0" prefWidth="180.0" text="Stwórz">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="915.0" layoutY="507.0" mnemonicParsing="false" onAction="#stworzMagazyn" prefHeight="60.0" prefWidth="180.0" text="Stwórz">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="100.0" layoutY="205.0" prefHeight="44.0" prefWidth="125.0" text="Pracownik" textFill="#3a57ff">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="100.0" layoutY="408.0" prefHeight="44.0" prefWidth="125.0" text="Klient" textFill="#3a57ff">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1063.0" layoutY="205.0" prefHeight="44.0" prefWidth="125.0" text="Produkt" textFill="#3a57ff">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1063.0" layoutY="386.0" prefHeight="44.0" prefWidth="125.0" text="Magazyn" textFill="#3a57ff">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+         <tooltip>
+            <Tooltip text="Tworzenie tabel SQLite">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+    </Tab>
+    <Tab text="Usuń tabele">
+      <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                  <Button layoutX="193.0" layoutY="96.0" mnemonicParsing="false" onAction="#usunPracownik" prefHeight="60.0" prefWidth="180.0" text="Usuń">
+                      <font>
+                          <Font size="21.0" />
+                      </font>
+                  </Button>
+                  <ImageView fitHeight="343.0" fitWidth="599.0" layoutX="341.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                          <Image url="@../image/sql-595x335_0.jpg" />
+                      </image>
+                  </ImageView>
+                  <Button layoutX="915.0" layoutY="96.0" mnemonicParsing="false" onAction="#usunProdukt" prefHeight="60.0" prefWidth="180.0" text="Usuń">
+                      <font>
+                          <Font size="21.0" />
+                      </font>
+                  </Button>
+                  <Button layoutX="193.0" layoutY="507.0" mnemonicParsing="false" onAction="#usunKlient" prefHeight="60.0" prefWidth="180.0" text="Usuń">
+                      <font>
+                          <Font size="21.0" />
+                      </font>
+                  </Button>
+                  <Button layoutX="915.0" layoutY="507.0" mnemonicParsing="false" onAction="#usunMagazyn" prefHeight="60.0" prefWidth="180.0" text="Usuń">
+                      <font>
+                          <Font size="21.0" />
+                      </font>
+                  </Button>
+                  <Label layoutX="100.0" layoutY="205.0" prefHeight="44.0" prefWidth="125.0" text="Pracownik" textFill="#3a57ff">
+                      <font>
+                          <Font size="25.0" />
+                      </font>
+                  </Label>
+                  <Label layoutX="100.0" layoutY="408.0" prefHeight="44.0" prefWidth="125.0" text="Klient" textFill="#3a57ff">
+                      <font>
+                          <Font size="25.0" />
+                      </font>
+                  </Label>
+                  <Label layoutX="1063.0" layoutY="205.0" prefHeight="44.0" prefWidth="125.0" text="Produkt" textFill="#3a57ff">
+                      <font>
+                          <Font size="25.0" />
+                      </font>
+                  </Label>
+                  <Label layoutX="1063.0" layoutY="386.0" prefHeight="44.0" prefWidth="125.0" text="Magazyn" textFill="#3a57ff">
+                      <font>
+                          <Font size="25.0" />
+                      </font>
+                  </Label>
+              </children>
+          </AnchorPane>
+      </content>
+         <tooltip>
+            <Tooltip text="Usuwanie tabel SQLite" />
+         </tooltip>
+    </Tab>
+      <Tab text="Dodaj">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane layoutX="84.0" layoutY="51.0" prefHeight="489.0" prefWidth="283.0">
+                     <children>
+                        <Label layoutX="78.0" layoutY="48.0" prefHeight="36.0" prefWidth="127.0" text="Pracownik" textFill="#3a57ff">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="pracownikImie" layoutX="66.0" layoutY="114.0" promptText="Imie">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="pracowniknazwisko" layoutX="66.0" layoutY="185.0" promptText="Nazwisko">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="pracownikPesel" layoutX="66.0" layoutY="260.0" promptText="Pesel">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="pracownikTelefon" layoutX="66.0" layoutY="334.0" promptText="Telefon">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Button layoutX="64.0" layoutY="415.0" mnemonicParsing="false" onAction="#dodajPracownika" prefHeight="48.0" prefWidth="155.0" text="Dodaj">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="640.0" layoutY="51.0" prefHeight="489.0" prefWidth="283.0">
+                     <children>
+                        <Label layoutX="78.0" layoutY="48.0" prefHeight="36.0" prefWidth="127.0" text="Produkt" textFill="#3a57ff">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="produktNazwa" layoutX="66.0" layoutY="144.0" promptText="Nazwa">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="produktProducent" layoutX="66.0" layoutY="215.0" promptText="Producent">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="produktKwota" layoutX="66.0" layoutY="289.0" promptText="Kwota">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Button layoutX="69.0" layoutY="415.0" mnemonicParsing="false" onAction="#dodajdoProduktu" prefHeight="48.0" prefWidth="155.0" text="Dodaj">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="367.0" layoutY="51.0" prefHeight="489.0" prefWidth="283.0">
+                     <children>
+                        <Label layoutX="78.0" layoutY="48.0" prefHeight="36.0" prefWidth="127.0" text="Klient" textFill="#3a57ff">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="klientImie" layoutX="66.0" layoutY="114.0" promptText="Imie">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="klientNazwisko" layoutX="66.0" layoutY="185.0" promptText="Nazwisko">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="klientPesel" layoutX="66.0" layoutY="260.0" promptText="Pesel">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="klientMail" layoutX="66.0" layoutY="334.0" promptText="Adres e-mail">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Button layoutX="64.0" layoutY="415.0" mnemonicParsing="false" onAction="#dodajKlienta" prefHeight="48.0" prefWidth="155.0" text="Dodaj">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="923.0" layoutY="51.0" prefHeight="489.0" prefWidth="283.0">
+                     <children>
+                        <Label layoutX="78.0" layoutY="48.0" prefHeight="36.0" prefWidth="127.0" text="Magazyn" textFill="#3a57ff">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="magazynNazwa" layoutX="66.0" layoutY="144.0" promptText="Nazwa">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="magazynProducent" layoutX="66.0" layoutY="215.0" promptText="Producent">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="magazynIlosc" layoutX="66.0" layoutY="289.0" promptText="Ilość">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Button layoutX="69.0" layoutY="415.0" mnemonicParsing="false" onAction="#dodajdoMagazynu" prefHeight="48.0" prefWidth="155.0" text="Dodaj">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+        </content>
+         <tooltip>
+            <Tooltip text="Dodawanie nowych rekordów &#10;do już istniejących tabel&#10;" />
+         </tooltip>
+      </Tab>
+      <Tab text="Pokaż i Modyfikuj">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TabPane layoutY="-1.0" prefHeight="662.0" prefWidth="1280.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="Pracownik">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TableView fx:id="tablePracownik" prefHeight="603.0" prefWidth="1075.0">
+                                       <columns>
+                                          <TableColumn fx:id="colPracownikId" prefWidth="75.0" text="Id" />
+                                          <TableColumn fx:id="colPracownikImie" prefWidth="75.0" text="Imie" />
+                                          <TableColumn fx:id="colPracownikNazwisko" prefWidth="75.0" text="Nazwisko" />
+                                          <TableColumn fx:id="colPracownikPesel" prefWidth="75.0" text="PESEL" />
+                                          <TableColumn fx:id="colPracownikTelefon" prefWidth="75.0" text="Telefon" />
+                                       </columns>
+                                    </TableView>
+                                    <Button layoutX="1108.0" layoutY="239.0" mnemonicParsing="false" onAction="#usunbuttPracownik" prefHeight="49.0" prefWidth="141.0" text="Usuń" />
+                                    <Button layoutX="1108.0" layoutY="85.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="141.0" text="Modyfikuj" />
+                                    <Button layoutX="1108.0" layoutY="403.0" mnemonicParsing="false" onAction="#odswiezPracownik" prefHeight="49.0" prefWidth="141.0" text="Odśwież" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="Klient">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TableView fx:id="tableKlient" prefHeight="603.0" prefWidth="1075.0">
+                                       <columns>
+                                          <TableColumn fx:id="colIKlientId" prefWidth="75.0" text="Id" />
+                                          <TableColumn fx:id="colIKlientImie" prefWidth="75.0" text="Imie" />
+                                          <TableColumn fx:id="colKlientNazwisko" prefWidth="75.0" text="Nazwisko" />
+                                          <TableColumn fx:id="colKlientPesel" prefWidth="75.0" text="PESEL" />
+                                          <TableColumn fx:id="colKlientMail" prefWidth="75.0" text="e-mail" />
+                                       </columns>
+                                    </TableView>
+                                    <Button layoutX="1108.0" layoutY="239.0" mnemonicParsing="false" onAction="#usunbuttKlient" prefHeight="49.0" prefWidth="141.0" text="Usuń" />
+                                    <Button layoutX="1108.0" layoutY="85.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="141.0" text="Modyfikuj" />
+                                    <Button layoutX="1108.0" layoutY="403.0" mnemonicParsing="false" onAction="#odswiezKlient" prefHeight="49.0" prefWidth="141.0" text="Odśwież" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                        <Tab text="Produkt">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TableView fx:id="tableProdukt" prefHeight="603.0" prefWidth="1075.0">
+                                       <columns>
+                                          <TableColumn fx:id="colProduktId" prefWidth="75.0" text="Id" />
+                                          <TableColumn fx:id="colProduktNazwa" prefWidth="75.0" text="Nazwa" />
+                                          <TableColumn fx:id="colProduktProducent" prefWidth="75.0" text="Producent" />
+                                          <TableColumn fx:id="colProduktKwota" prefWidth="75.0" text="Kwota" />
+                                       </columns>
+                                    </TableView>
+                                    <Button layoutX="1108.0" layoutY="239.0" mnemonicParsing="false" onAction="#usunbuttProdukt" prefHeight="49.0" prefWidth="141.0" text="Usuń" />
+                                    <Button layoutX="1108.0" layoutY="85.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="141.0" text="Modyfikuj" />
+                                    <Button layoutX="1108.0" layoutY="403.0" mnemonicParsing="false" onAction="#odswiezProdukt" prefHeight="49.0" prefWidth="141.0" text="Odśwież" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Magazyn">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TableView fx:id="tableMagazyn" prefHeight="603.0" prefWidth="1075.0">
+                                      <columns>
+                                          <TableColumn fx:id="colMagazynId" prefWidth="75.0" text="Id" />
+                                        <TableColumn fx:id="colMagazynNazwa" prefWidth="75.0" text="Nazwa" />
+                                        <TableColumn fx:id="colMagazynProducent" prefWidth="75.0" text="Producent" />
+                                          <TableColumn fx:id="colMagazynIlosc" prefWidth="75.0" text="Ilość" />
+                                      </columns>
+                                    </TableView>
+                                    <Button layoutX="1108.0" layoutY="239.0" mnemonicParsing="false" onAction="#usunbuttMagazyn" prefHeight="49.0" prefWidth="141.0" text="Usuń" />
+                                    <Button layoutX="1108.0" layoutY="85.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="141.0" text="Modyfikuj" />
+                                    <Button layoutX="1108.0" layoutY="403.0" mnemonicParsing="false" onAction="#odswiezMagazyn" prefHeight="49.0" prefWidth="141.0" text="Odśwież" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+               </children></AnchorPane>
+         </content>
+         <tooltip>
+            <Tooltip text="Wyświetlanie danych w bazie" />
+         </tooltip>
+      </Tab>
+      <Tab text="Więcej...">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+         <tooltip>
+            <Tooltip text="Dodatkowe opcje dostępne w programie oraz informacje o projekcie" />
+         </tooltip>
+      </Tab>
+  </tabs>
+</TabPane>

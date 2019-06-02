@@ -1,0 +1,43 @@
+    public void deleteprac(int id){
+        String deleterekordprac="DELETE FROM 'pracownik' WHERE id_pracownika ='"+id+"';";
+        try{
+            stmt.execute(deleterekordprac);
+            System.out.println("Usunięto pracownika");
+        }catch(SQLException e){
+            System.err.println("Błąd przy usuwaniu rekordu o id "+ id+" z tabeli Package.Pracownik");
+            e.printStackTrace();
+        }
+    }
+
+    public void deleteklient(int id){
+        String deleterekordklient="DELETE FROM 'klient' WHERE id_klienta ='"+id+"';";
+        try{
+            stmt.execute(deleterekordklient);
+            System.out.println("Usunięto Klienta");
+        }catch(SQLException e){
+            System.err.println("Błąd przy usuwaniu rekordu o id "+ id+" z tabeli Package.Klient");
+            e.printStackTrace();
+        }
+    }
+
+    public void deletemag(int id){
+        String deleterekordmag="DELETE FROM 'magazyn' WHERE id_pr_w_mag ='"+id+"';";
+        try{
+            stmt.execute(deleterekordmag);
+            System.out.println("Usunięto produkt z magazynu");
+        }catch(SQLException e){
+            System.err.println("Błąd przy usuwaniu rekordu o id "+ id+" z tabeli magazyn");
+            e.printStackTrace();
+        }
+    }
+
+    public void deleteprod(int id){
+        String deleterekordprod="DELETE FROM 'produkt' WHERE id_produktu ='"+id+"';";
+        try{
+            stmt.execute(deleterekordprod);
+            System.out.println("Usunięto produkt");
+        }catch(SQLException e){
+            System.err.println("Błąd przy usuwaniu rekordu o id "+ id+" z tabeli produkt");
+            e.printStackTrace();
+        }
+    }
